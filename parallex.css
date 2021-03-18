@@ -1,0 +1,63 @@
+/*******BASE STYLING******/
+
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.the_container {
+    height: calc(100vh - 20px);
+    perspective: 2px;
+}
+
+h1 {
+    font-size: 25vw;
+}
+
+#section1{
+    background-color: turquoise;
+    height: 30vh;
+    overscroll-behavior: none;
+}
+
+#section2{
+    background-color: hotpink;
+}
+
+#section3{
+    background-color: greenyellow;
+}
+
+#section4{
+    background-color: blue;
+}
+
+#section5{
+    background-color: orange;
+}
+
+section{
+    scroll-snap-align: start;
+}
+
+/*****faster & slower ids*****/
+
+#slower{
+    transform: translateZ(-1px) scale(1.5)
+}
+
+#faster{
+    transform: translateZ(1px) scale(.5)
+}
+
+#slower,
+#faster{
+    color: yellow;
+    font-size: 36px;
+    height: 30px;
+}
